@@ -1,4 +1,3 @@
-
 function createCarElement(car) {
     // car card container
     var carElement = document.createElement('div');
@@ -34,11 +33,16 @@ function updateCarListings() {
     var color = document.getElementById('color').value;
 
     var carList = document.getElementById('car-list');
+    var noResults = document.getElementById('no-results');
+
     carList.innerHTML = '';
+    noResults.style.display = 'none'; 
+    var foundCars = false; 
 
     for (var i = 0; i < usedCars.length; i++) {
         var car = usedCars[i];
 
+        // Check if car matches filters
         if ((minYear === '' || car.year >= minYear) &&
             (maxYear === '' || car.year <= maxYear) &&
             (make === '' || car.make === make) &&
@@ -49,11 +53,17 @@ function updateCarListings() {
             // If it does, add it to the car list
             var carElement = createCarElement(car);
             carList.appendChild(carElement);
+            foundCars = true; // Set flag to true
         }
+    }
+
+    // If no cars match the criteria, show the no results message
+    if (!foundCars) {
+        noResults.style.display = 'block';
     }
 }
 
-
+// Call updateCarListings when the page loads and whenever the filters change
 window.onload = function() {
     updateCarListings();
 

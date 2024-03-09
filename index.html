@@ -4,7 +4,6 @@
     <title>Used Car Sales</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- Include Select2 CSS -->
-    <!--Used Chatgpt to help color and make look cleaner-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -58,16 +57,20 @@
     
         <button onclick="updateCarListings()">Apply Filters</button>
     </div>
+    <div id="no-results" style="display: none;">
+        <p>No cars match the selected criteria. Please try again.</p>
+    </div>
     <div id="car-list">
         
     </div>
     <script src="./java/usedCars.js"></script>
     <script src="./java/main.js"></script>
-    <!-- From Chatgpt for Make and color -->
+    <!-- From ChatGPT for Make and color -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </body>
 </html>
+
 
 
 
