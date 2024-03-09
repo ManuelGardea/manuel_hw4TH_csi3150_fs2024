@@ -1,8 +1,17 @@
-// This function could be used to create a car listing element
+
 function createCarElement(car) {
+    // car card container
     var carElement = document.createElement('div');
     carElement.className = 'car-card';
-    carElement.innerHTML = `
+
+    // image element
+    var img = document.createElement('img');
+    img.src = `../images/${car.make}-${car.model}.jpg`; // Set the image source
+    img.alt = `${car.make} ${car.model}`; // Set the alt text for accessibility
+    carElement.appendChild(img); // Append the image to the car card
+
+    // Create and append other car details
+    carElement.innerHTML += `
         <h2>${car.make} ${car.model}</h2>
         <p>Year: ${car.year}</p>
         <p>Mileage: ${car.mileage}</p>
@@ -10,10 +19,11 @@ function createCarElement(car) {
         <p>Color: ${car.color}</p>
         <p>Gas Mileage: ${car.gasMileage}</p>
     `;
+
     return carElement;
 }
 
-// This function could be used to update the car listings based on the filters
+// This function updates the car listings based on the filters
 function updateCarListings() {
     var minYear = document.getElementById('min-year').value;
     var maxYear = document.getElementById('max-year').value;
@@ -29,7 +39,6 @@ function updateCarListings() {
     for (var i = 0; i < usedCars.length; i++) {
         var car = usedCars[i];
 
-        // Check if car matches filters
         if ((minYear === '' || car.year >= minYear) &&
             (maxYear === '' || car.year <= maxYear) &&
             (make === '' || car.make === make) &&
@@ -44,6 +53,13 @@ function updateCarListings() {
     }
 }
 
-// Call updateCarListings when the page loads and whenever the filters change
-window.onload = updateCarListings;
+
+window.onload = function() {
+    updateCarListings();
+
+    // Initialize Select2 for select elements with the 'select2' class
+    $('.select2').select2();
+};
+
+
 

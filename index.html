@@ -3,17 +3,37 @@
 <head>
     <title>Used Car Sales</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Include Select2 CSS -->
+    <!--Used Chatgpt to help color and make look cleaner-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Used Car Sales</h1>
+    <h1>Mannys' Used Car Sales</h1>
     <div id="filters">
         <label for="year">Year:</label>
         <input type="number" id="min-year" placeholder="Min Year">
         <input type="number" id="max-year" placeholder="Max Year">
     
         <label for="make">Make:</label>
-        <select id="make" multiple>
+        <select id="make" multiple class="select2">
             <!-- Add options for each car make -->
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Honda">Honda</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Kia">Kia</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Volkswagen">Volkswagen</option> 
+            <option value="BMW">BMW</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Cadillac">Cadillac</option>
+            <option value="Dodge">Dodge</option>
+            <option value="Tesla">Tesla</option>
+            
         </select>
     
         <label for="mileage">Mileage:</label>
@@ -24,13 +44,16 @@
         <input type="number" id="max-price" placeholder="Max Price">
     
         <label for="color">Color:</label>
-        <select id="color" multiple>
+        <select id="color" multiple class="select2">
             <!-- Add options for each car color -->
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="black">Black</option>
-            <option value="white">White</option>
-            <option value="silver">Silver</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Silver">Silver</option>
+            <option value="Gray">Gray</option>
+            <option value="Green">Green</option>
+            <option value="Tan">Tan</option>
         </select>
     
         <button onclick="updateCarListings()">Apply Filters</button>
@@ -40,7 +63,11 @@
     </div>
     <script src="./java/usedCars.js"></script>
     <script src="./java/main.js"></script>
+    <!-- From Chatgpt for Make and color -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </body>
 </html>
+
 
 

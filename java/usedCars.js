@@ -7,6 +7,7 @@ const usedCars = [
     price: 18000,
     color: "Silver",
     gasMileage: "25 mpg city, 35 mpg highway",
+    image: "../assets/Toyota-Camry.jpg"
   },
   {
     year: 2016,
@@ -14,7 +15,7 @@ const usedCars = [
     model: "Civic",
     mileage: 45000,
     price: 14000,
-    color: "White",
+    color: "Gray",
     gasMileage: "30 mpg city, 40 mpg highway",
   },
   {
@@ -23,7 +24,7 @@ const usedCars = [
     model: "Fusion",
     mileage: 35000,
     price: 16000,
-    color: "Black",
+    color: "Tan",
     gasMileage: "28 mpg city, 38 mpg highway",
   },
   {
@@ -32,7 +33,7 @@ const usedCars = [
     model: "Altima",
     mileage: 25000,
     price: 17000,
-    color: "Blue",
+    color: "Black",
     gasMileage: "27 mpg city, 36 mpg highway",
   },
   {
@@ -41,7 +42,7 @@ const usedCars = [
     model: "Malibu",
     mileage: 50000,
     price: 12000,
-    color: "Red",
+    color: "White",
     gasMileage: "25 mpg city, 37 mpg highway",
   },
   // Additional entries:
@@ -60,7 +61,7 @@ const usedCars = [
     model: "Elantra",
     mileage: 22000,
     price: 16000,
-    color: "Silver",
+    color: "Red",
     gasMileage: "30 mpg city, 41 mpg highway",
   },
   {
@@ -69,7 +70,7 @@ const usedCars = [
     model: "Outback",
     mileage: 60000,
     price: 14000,
-    color: "Green",
+    color: "White",
     gasMileage: "22 mpg city, 30 mpg highway",
   },
   {
@@ -78,7 +79,7 @@ const usedCars = [
     model: "CX-5",
     mileage: 32000,
     price: 19000,
-    color: "Blue",
+    color: "Black",
     gasMileage: "24 mpg city, 31 mpg highway",
   },
   {   
@@ -87,7 +88,7 @@ const usedCars = [
     model: "Sorento",
     mileage: 28000,
     price: 17000,
-    color: "White",
+    color: "Black",
     gasMileage: "22 mpg city, 29 mpg highway",
   },
   // Five more entries:
@@ -97,7 +98,7 @@ const usedCars = [
     model: "Challenger",
     mileage: 30000,
     price: 24000,
-    color: "Black",
+    color: "Gray",
     gasMileage: "19 mpg city, 30 mpg highway",
   },
   {
@@ -106,7 +107,7 @@ const usedCars = [
     model: "XT5",
     mileage: 28000,
     price: 32000,
-    color: "Red",
+    color: "Blue",
     gasMileage: "19 mpg city, 27 mpg highway",
   },
   {
@@ -115,7 +116,7 @@ const usedCars = [
     model: "F-PACE",
     mileage: 26000,
     price: 38000,
-    color: "Blue",
+    color: "White",
     gasMileage: "18 mpg city, 23 mpg highway",
   },
   {
@@ -124,7 +125,7 @@ const usedCars = [
     model: "Model S",
     mileage: 18000,
     price: 55000,
-    color: "Black",
+    color: "White",
     gasMileage: "Electric (370 miles per charge)",
   },
   {
@@ -133,7 +134,7 @@ const usedCars = [
     model: "Cayenne",
     mileage: 22000,
     price: 68000,
-    color: "White",
+    color: "Black",
     gasMileage: "20 mpg city, 26 mpg highway",
   },
   {
@@ -142,7 +143,7 @@ const usedCars = [
     model: "ES",
     mileage: 29000,
     price: 26000,
-    color: "White",
+    color: "Tan",
     gasMileage: "21 mpg city, 30 mpg highway",
   },
   {
@@ -151,9 +152,8 @@ const usedCars = [
     model: "5 Series",
     mileage: 32000,
     price: 27000,
-    color: "Black",
+    color: "White",
     gasMileage: "23 mpg city, 34 mpg highway",
-    
   },
 ];
 

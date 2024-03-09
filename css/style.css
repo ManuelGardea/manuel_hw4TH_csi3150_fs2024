@@ -1,11 +1,59 @@
-body {
+/* style.css */
+h1 {
     font-family: Arial, sans-serif;
+    color: #007bff; /* Blue color */
+    font-size: 36px; /* Adjust font size as needed */
+    text-align: center; /* Center align the heading */
+    margin-top: 20px; /* Add some top margin for spacing */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
 }
 
-#filters {
-    margin-bottom: 20px;
+.filters {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
+.filter-group {
+    display: flex;
+    align-items: center;
+}
+
+.filter-group label {
+    margin-right: 10px;
+}
+
+.filter-group input,
+.filter-group select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-group select {
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Car Listings */
 #car-list {
     display: flex;
     flex-wrap: wrap;
@@ -13,50 +61,31 @@ body {
 }
 
 .car-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: calc(33% - 20px);
+    width: calc(33% - 20px); /* Adjust the width to accommodate margins */
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 15px; /* Increase padding for better spacing */
     box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.car-card img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .car-card h2 {
-    margin: 0 0 10px;
+    margin: 10px 0; /* Add margin to the top and bottom of headings */
+    font-size: 18px; /* Increase font size for headings */
 }
 
 .car-card p {
-    margin: 0 0 10px;
+    margin: 5px 0; /* Add margin to the top and bottom of paragraphs */
+    font-size: 14px; /* Decrease font size for paragraph text */
+    color: #555; /* Darken text color for better readability */
 }
 
-#filters {
-    margin-bottom: 20px;
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-#filters label {
-    margin-right: 10px;
-}
-
-#filters select {
-    padding: 5px;
-    border-radius: 3px;
-}
-
-#filters button {
-    padding: 5px 10px;
-    border-radius: 3px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-#filters button:hover {
-    background-color: #0056b3;
-}
